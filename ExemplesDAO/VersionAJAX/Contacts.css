@@ -1,0 +1,48 @@
+/* Feuille de style pour le TD Contacts */
+
+body {
+   widh: 976px; margin: 5px auto;
+   font-family: Verdana, Arial, sans-serif;
+}
+
+h1 { text-align: center; }
+.centre { text-align: center; }
+table { 
+    border-collapse: collapse;
+    margin: 5px auto;
+}
+
+th { text-align: left; color: white; background: #BBBBBB; border: thin solid black;}
+th:last-child { background: white; border: none;}
+td { font-size: .92em; border: thin solid black; }
+td:last-child { border: none;}
+th, td {
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+
+/* Masquer la dernière ligne du thead (ligne à cloner) */
+table > thead > tr:last-child { display: none }
+
+img { vertical-align: middle; }
+img:hover { cursor:pointer; cursor: hand; }
+
+/* Pour les messages */
+p.message {
+    font-weight: bold;
+    text-align: center;
+    color: #29A329;
+    background-color: #81F0BC;
+    border: 1px solid #29A329;
+    padding: 3px 5px;
+}
+
+p.erreur {
+    color: red;
+    background-color: #FFA3A3;
+    border: 1px solid red;
+    padding: 3px 5px;
+}
+
+/* Pour les auteurs */
+p.binome { text-align: right; font-size: 0.8em; font-style: italic; padding-right: 10px; } 

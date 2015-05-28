@@ -1,0 +1,3 @@
+Écriture d'un ORM (Object Repository Manager) basé sur deux classes :
+    Classes/DAO.php : classe de base dérivable en classes de création d'objets de type TableObject
+    Classes/TableObject.php : classe modélisant une table de la BD

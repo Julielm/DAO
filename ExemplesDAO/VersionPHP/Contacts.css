@@ -1,0 +1,45 @@
+/* Feuille de style pour le TD Contacts */
+
+body {
+   widh: 976px; margin: 5px auto;
+   font-family: Verdana, Arial, sans-serif;
+}
+
+h1 { text-align: center; }
+.centre { text-align: center; }
+table { 
+    border-collapse: collapse;
+    margin: 5px auto;
+}
+
+th { text-align: left; color: white; background: #BBBBBB; border: thin solid black;}
+table.form th:last-child { background: white; border: none;}
+td { font-size: .92em; border: thin solid black; }
+table.form td:last-child { border: none; }
+th, td {
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+
+img { vertical-align: middle; }
+img:hover { cursor:pointer; cursor: hand; }
+
+/* Pour les messages */
+p.message {
+    width: 90%; margin: 10px auto;
+    font-weight: bold;
+    text-align: center;
+    color: #29A329; background-color: #81F0BC;
+    border: 1px solid #29A329;
+    padding: 3px 5px;
+}
+
+p.erreur {
+    width: 90%; margin: 10px auto;
+    color: red; background-color: #FFA3A3;
+    border: 1px solid red;
+    padding: 3px 5px;
+}
+
+/* Pour les auteurs */
+p.entete { text-align: right; font-size: 0.8em; font-style: italic; padding-right: 10px; } 

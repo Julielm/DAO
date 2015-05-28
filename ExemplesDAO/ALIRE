@@ -1,0 +1,17 @@
+
+Exemple d'utilisation des classes MaBD, DAO, TableObject sur une petite application simple de gestion des contacts.
+
+Pour l'utiliser dans votre environnement, vous devez disposer d'un serveur Web et d'un serveur MySQL, puis :
+    - importer le fichier Contacts.sql dans une de vos BDs
+    - adapter Classes/MaBD.php pour qu'il accède à cette base
+    - on peut vérifier le fonctionnement avec :
+        cd Tests ; php testContacts.php ; php testAdministrateurs.php
+Noter que les programmes de tests constituent des modes d'emploi tout à fait acceptables.
+
+Deux versions exemples sont fournies :
+    VersionAJAX : interaction en AJAX à partir d'une page HTML, modifications enregistrées par
+                  des requêtes PHP de type Web Services (CRUD). 
+    VersionPHP : version PHP pur, pas d'AJAX. Juste un peu de Javascript pour gérer la soumission 
+                 du formulaire.
+
+ Note : la version PHP est plus complète puisqu'elle intègre l'authentification.

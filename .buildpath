@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="Classes"/>
+	<buildpathentry kind="src" path="ExemplesDAO/Classes"/>
+	<buildpathentry kind="src" path="ExemplesDAO/Tests"/>
+	<buildpathentry kind="src" path="ExemplesDAO/VersionAJAX"/>
+	<buildpathentry kind="src" path="ExemplesDAO/VersionPHP"/>
+	<buildpathentry kind="src" path="Tests"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

@@ -14,6 +14,8 @@
  * NB : un PreparedStatement ne fonctionne pas avec des noms de champ contenant des caractères UTF-8 !
  */
 
+use \PDO;
+
 class DAO {
     const UNKNOWN_ID = -1; // Identifiant non déterminé (pour les clés autoincrémentées)
     protected $pdo; // Objet pdo pour l'accès à la table
@@ -92,6 +94,16 @@ class DAO {
     public function getAll($complementRequete = "") {
         $stmt = $this->pdo->query("SELECT * FROM $this->table $complementRequete");
         return $this->toObjectArray($stmt);
+    }
+
+    // Construction d'un Iterator pour récupérer ligne par ligne et sous forme d'objet les
+    // lignes de la table.
+    // $complementRequete contient une chaîne ajoutée à la requête, par exemple :
+    //      ORDER BY champ;
+    //      WHERE champ = 'valeur';
+    public function getIterator($complementRequete = "") {
+        $stmt = $this->pdo->prepare("SELECT * FROM $this->table $complementRequete");
+        return new DAOIterator($stmt, $this->class);
     }
 
     // Insertion de l'objet

@@ -20,8 +20,6 @@
  * On implémente JsonSerializable pour ne sérialiser que les champs si on souhaite produire du JSON.
  */
 
-use \JsonSerializable;
-
 class TableObject implements JsonSerializable {
 
     // Liste des champs et leur valeur

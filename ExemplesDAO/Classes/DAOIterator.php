@@ -3,16 +3,14 @@
  * Classe pour itérer ligne par ligne sur les résultats d'un requête.
  */
 
-use \PDO;
-
-class DAOIterator Implements \Iterator {
+class DAOIterator Implements Iterator {
     private $index; // Rang dans la liste itérée
     private $stmt;  // PreparedStatement à utiliser 
     private $className;  // Nom de la classe des objets à produire
     private $courant; // Élément courant de l'itération
 
     // Reçoit un PDOStatement, initialisé par prepare, et le nom de la classe des objets à produire
-    public function __construct(PDOStatement $stmt, string $className) {
+    public function __construct(PDOStatement $stmt, $className) {
         $this->stmt = $stmt;
         $this->className = $className;
         $this->init();

@@ -14,8 +14,6 @@
  * NB : un PreparedStatement ne fonctionne pas avec des noms de champ contenant des caractères UTF-8 !
  */
 
-use \PDO;
-
 class DAO {
     const UNKNOWN_ID = -1; // Identifiant non déterminé (pour les clés autoincrémentées)
     protected $pdo; // Objet pdo pour l'accès à la table

@@ -1,6 +1,5 @@
 <?php
-// Autochargement des classes
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 $contacts = new ContactsDAO(MaBD::getInstance());
 echo "------- Tous les contacts :\n";

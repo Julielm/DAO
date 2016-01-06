@@ -1,4 +1,5 @@
 <?php
+// Illustration de l'utilisation du DAO avec un objet impliquant deux tables, Administratif hérite de Personne
 class AdministratifsDAO extends DAO {
     protected $table = "Administratifs";
     protected $class = "Administratif";

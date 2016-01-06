@@ -2,8 +2,7 @@
 // test des cas particuliers dans DAO et TableObject :
 //  - table composée d'un seul champ clé autoincrémentée
 
-// Autochargement des classes
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 echo "------- Avant insertion :\n";
 $nouv = new OneAutoIncremented(array('num' => DAO::UNKNOWN_ID));

@@ -1,7 +1,6 @@
 <?php
 // Test d'une classe dérivée : Administratif hérite de Administratif
-// Autochargement des classes
-function __autoload($plass) { require_once "../Classes/$plass.php"; }
+require_once "autoload.php";
 
 $moi = new Administratif(array('personneId' => DAO::UNKNOWN_ID, 
     'nom' => "Genthial", 'prénom' => "Damien",

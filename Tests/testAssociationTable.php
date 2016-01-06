@@ -2,8 +2,7 @@
 // test des cas particuliers dans DAO et TableObject :
 //  - table composée seulement de deux clés étrangères, constituant la clé primaire
 
-// Autochargement des classes
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 $assoADAO = new AssociationTableDAO(MaBD::getInstance());
 

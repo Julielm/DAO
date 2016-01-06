@@ -1,6 +1,5 @@
 <?php
-// Autochargement des classes
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 function afficheTout($contacts) {
     echo "------- Tous les contacts :\n";
@@ -33,6 +32,7 @@ echo "---------------------------\n";
 
 echo "Modification de $moi\n";
 $moi->tél = "04 75 41 88 12";
+$moi->prénom = NULL;
 $contacts->update($moi);
 echo "\t==> $moi\n";
 

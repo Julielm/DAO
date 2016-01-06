@@ -1,11 +1,10 @@
 <?php
-// Autochargement des classes
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 $pdo = MaBD::getInstance();
 var_dump($pdo);
 
-$stmt = $pdo->query("SELECT * FROM Contacts");
+$stmt = $pdo->query("SELECT * FROM AssociationTable");
 print_r($stmt->fetchAll(PDO::FETCH_ASSOC));
 
 ?>

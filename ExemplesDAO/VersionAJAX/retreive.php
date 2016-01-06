@@ -1,6 +1,5 @@
 <?php
-// Autochargement des classes
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 if (! isset($_GET['id'])) {
     echo json_encode(false);

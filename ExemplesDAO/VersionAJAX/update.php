@@ -1,5 +1,5 @@
 <?php
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 // Vérifie qu'on a toutes les informations, mais ne vérifie pas le contenu
 function checkData() {

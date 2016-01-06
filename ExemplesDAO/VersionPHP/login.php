@@ -1,5 +1,5 @@
 <?php
-function __autoload($class) { require_once "../Classes/$class.php"; }
+require_once "autoload.php";
 
 // ------- contrôleur -------
 session_start();

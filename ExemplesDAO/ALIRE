@@ -3,7 +3,7 @@ Exemple d'utilisation des classes MaBD, DAO, TableObject sur une petite applicat
 
 Pour l'utiliser dans votre environnement, vous devez disposer d'un serveur Web et d'un serveur MySQL, puis :
     - importer le fichier Contacts.sql dans une de vos BDs
-    - adapter Classes/MaBD.php pour qu'il accède à cette base
+    - adapter ../Classes/MaBD.php pour qu'il accède à cette base
     - on peut vérifier le fonctionnement avec :
         cd Tests ; php testContacts.php ; php testAdministrateurs.php
 Noter que les programmes de tests constituent des modes d'emploi tout à fait acceptables.
